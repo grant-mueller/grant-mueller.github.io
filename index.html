@@ -1,66 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Grant's Personal Website</title>
-<style>
-body { margin: 0px; }
-body > div {
-    display: flex;
-    flex-flow: row wrap;
-    min-width: 800px;
-}
-body > div:nth-child(1) > header,nav,main,aside,footer {
-    background-color: lightblue; border-radius: 7px; margin: 5px; padding: 20px;
-}
-body > div:nth-child(1) > header { order: 1; height: 100px; flex: 0 1 100%; }
-body > div:nth-child(1) > nav { order: 4; flex: 0 0 12em; padding: 1em; }
-body > div:nth-child(1) > main { order: 3; min-height: 250px; flex: 1; }
-body > div:nth-child(1) > aside { order: 2; flex: 0 0 12em; padding: 1em; }
-body > div:nth-child(1) > footer { order: 5; height: 100px; flex: 0 1 100%; }
-</style>
-<link rel="apple-touch-icon" href="icon.png">
-<!-- Place favicon.ico in the root directory -->
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/main.css">
-<meta name="theme-color" content="#fafafa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Data Science Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-item {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .blog-post {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-  <div>
-      <header>
-          <h1>Grant Mueller | Data Scientist</h1>
-      </header>
-      <nav>
-          <h3>Navigation</h3>
-          <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-          </ul>
-      </nav>
-      <main>
-          <p>Hi! I'm a scientist working in the biopharmaceutical industry, learning to become a data scientist.<p>
-          <p>I'm in my penultimate semester at Johns Hopkins University expecting to graduate in December 2022 
-           with an MS in Biotechnology and a concentration in Bioinformatics.</p>
-           <p>You can download my resume here: <a target="_blank" href="https://github.com/grant-mueller/grant-mueller.github.io/blob/main/grant-mueller_resume_bioinformatics-scientist.pdf">PDF</a></p>
-      </main>
-      <aside>
-          <h3>Skills and Experience</h3>
-          <ul>
-              <li>2+ years Python coding</li>
-              <li>NGS data analysis</li>
-              <li>Analytical Chemistry</li>
-          </ul>
-      </aside>
-      <footer>
-        <p>Connect with me on social media (Linkedin), and check out my portfolio on GitHub!</p>
-        <a target="_blank" href="https://www.linkedin.com/in/grant-mueller">
-        <img src=img/LinkedIn-Blue-14@2x.png>
-        </a>
-        <a target="_blank" href="https://github.com/GMueller91/">
-        <img src="img/GitHub-Mark-64px.png">
-        </a>
-      </footer>
-  </div>
+    <header>
+        <h1>Your Data Science Portfolio</h1>
+        <p>Explore my projects and blog posts</p>
+    </header>
+
+    <div class="container">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <!-- Add your portfolio items here -->
+            <div class="item">
+                <img src="project1.jpg" alt="Project 1">
+                <p>Project 1 Description</p>
+            </div>
+            <div class="item">
+                <img src="project2.jpg" alt="Project 2">
+                <p>Project 2 Description</p>
+            </div>
+        </div>
+
+        <h2>Blog Posts</h2>
+        <div class="blog-post">
+            <!-- Add your blog posts here -->
+            <h3>Blog Post 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="blog-post">
+            <!-- Add more blog posts here -->
+            <h3>Blog Post 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Your Name
+    </footer>
 </body>
 </html>
