@@ -20,19 +20,25 @@
         }
 
         nav {
-            position: absolute;
-            right: 0;
+            width: 100%;
+            background-color: darkgreen;
+            padding-left: 30px;
+            padding-right: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        nav a {
-            float: right;
-            color: white;
-            text-align: center;
-            padding: 12px;
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        
+        .nav-item a {
+            display: inline-block;
+            padding: 10px 15px;
             text-decoration: none;
-            font-size: 18px;
-            line-height: 25px;
-            border-radius: 4px;
+            color: white;
         }
 
         .header a.logo {
@@ -87,12 +93,14 @@
 </head>
 <body>
     <header>
-        <h1>G. Mueller</h1>
-        <nav>
-          <a href="about.html">About</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="contact.html">Contact</a>
-          <a target="_blank" href="https://github.com/grant-mueller/grant-mueller.github.io/blob/main/GrantMueller_Resume.pdf">Resume</a>
+        <nav class="navbar">
+            <a href="#default" class="logo">G. Mueller</a>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a target="_blank" href="https://github.com/grant-mueller/grant-mueller.github.io/blob/main/GrantMueller_Resume.pdf">Resume</a></li>
+            </ul>
         </nav>
         
     </header>
