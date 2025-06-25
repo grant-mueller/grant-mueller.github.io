@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UniProt Proteins (Human)</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    canvas { max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+
+  <h2>Top 50 Human Proteins Queried from UniProt</h2>
+  <canvas id="proteinChart"></canvas>
+
+  <script>
+    fetch('uniprot_results.csv')
+      .then(response => response.text())
+      .then(text => {
+        const rows = text.trim().split('\n').slice(1);
+        const labels = rows.map(r => r.split(',')[1]);
+        const data = rows.map((_, i) => 1); // Just count to show presence
+
+        new Chart(document.getElementById('proteinChart'), {
+          type: 'bar',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'Protein Count',
+              data: data,
+              backgroundColor: 'rgba(54, 162, 235, 0.6)'
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                callbacks: {
+                  label: (context) => labels[context.dataIndex]
+                }
+              }
+            },
+            scales: {
+              x: {
+                ticks: {
+                  autoSkip: true,
+                  maxRotation: 90,
+                  minRotation: 45
+                }
+              }
+            }
+          }
+        });
+      });
+  </script>
+
+</body>
+</html>
