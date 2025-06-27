@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Case Studies | Grant Mueller</title>
+  <meta name="description" content="Explore Grant Mueller’s data stewardship & science projects: semantic pipelines, interactive dashboards, and FAIR metadata solutions.">
+
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header / Nav -->
+  <header role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo"><h2>G. Mueller</h2></a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="case-studies.html" aria-current="page">Case Studies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="https://github.com/grant-mueller/grant-mueller.github.io/blob/main/GrantMueller_DataSteward_Resume.pdf"
+             target="_blank"
+             rel="noopener"
+             aria-label="PDF resume – opens in new tab">
+            Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" role="main">
+    <section class="intro">
+      <h1>Case Studies</h1>
+      <p>Detailed stories of how I’ve applied data stewardship, semantic integration, and visualization to solve real-world life-science challenges.</p>
+    </section>
+
+    <section class="cases" aria-labelledby="cases-heading">
+      <div class="cases-grid">
+        <!-- Case Study 1 -->
+        <article class="case-item" aria-labelledby="case1-title">
+          <img src="img/cmc-sparql-hero.webp"
+               alt="Network graph visualization"
+               loading="lazy"
+               width="400"
+               height="250">
+          <h2 id="case1-title">🔬 CMC-SPARQL Pipeline</h2>
+          <p>
+            Built a reusable pipeline that enriches CMC manufacturing data 
+            with biomedical knowledge graphs via SPARQL. Demonstrated how 
+            UniProt and other ontologies amplify formulation metadata.
+          </p>
+          <p>
+            <a href="https://grant-mueller.github.io/uniprot-visualization"
+               aria-label="View interactive chart for CMC-SPARQL project">
+              View Interactive Chart →
+            </a>
+            <a href="https://github.com/grant-mueller/cmc-sparql-template"
+               aria-label="View source code for CMC-SPARQL project">
+              View Code →
+            </a>
+          </p>
+        </article>
+
+        <!-- Case Study 2 -->
+        <article class="case-item" aria-labelledby="case2-title">
+          <img src="img/shiny-dashboard-hero.webp"
+               alt="Shiny dashboard screenshot"
+               loading="lazy"
+               width="400"
+               height="250">
+          <h2 id="case2-title">📊 Bioreactor Monitoring Dashboard</h2>
+          <p>
+            Developed an R Shiny app to visualize real-time bioreactor metrics,
+            detect anomalies, and trigger alerts. Reduced manual QC checks 
+            by 40% and improved data traceability.
+          </p>
+          <p>
+            <a href="https://grant-mueller.github.io/bioreactor-dashboard"
+               aria-label="Launch Bioreactor Monitoring Dashboard">
+              Live Demo →
+            </a>
+            <a href="https://github.com/grant-mueller/bioreactor-dashboard"
+               aria-label="View source code for Bioreactor Monitoring Dashboard">
+              View Code →
+            </a>
+          </p>
+        </article>
+
+        <!-- Case Study 3 -->
+        <article class="case-item" aria-labelledby="case3-title">
+          <img src="img/fair-metadata-hero.webp"
+               alt="FAIR metadata form interface"
+               loading="lazy"
+               width="400"
+               height="250">
+          <h2 id="case3-title">🗂️ FAIR Metadata Manager</h2>
+          <p>
+            Designed a metadata curation tool leveraging JSON-LD and 
+            ontology lookups to ensure biologics process data adheres 
+            to FAIR principles. Integrated automated validations and exports.
+          </p>
+          <p>
+            <a href="https://github.com/grant-mueller/fair-metadata-manager"
+               aria-label="View source code for FAIR Metadata Manager">
+              View Code →
+            </a>
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    &copy; 2025 Grant Mueller
+  </footer>
+</body>
+</html>

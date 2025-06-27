@@ -24,6 +24,8 @@ a {
 }
 a:hover,
 a:focus { color: #005bb5; outline: none; }
+
+/* Skip-link for screen readers & keyboard users */
 .skip-link {
   position: absolute;
   left: -999px;
@@ -180,4 +182,18 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: .9rem;
+}
+
+/* — Case Studies Grid — */
+.cases-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.case-item img {
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
