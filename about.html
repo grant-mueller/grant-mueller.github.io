@@ -1,94 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grant Mueller | Data Scientist</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About | Grant Mueller</title>
+  <meta name="description" content="Learn how Grant Mueller blends data science, semantic integration, and stakeholder empathy into high-impact data stewardship.">
 
-        /* Float the link section to the right */
-        .header-right {
-            float: right;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .portfolio-item {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .portfolio-item img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .blog-post {
-            max-width: 800px;
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo"><h2>G. Mueller</h2></a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="https://github.com/grant-mueller/grant-mueller.github.io/blob/main/GrantMueller_DataSteward_Resume.pdf"
+             target="_blank"
+             rel="noopener"
+             aria-label="PDF resume – opens in new tab">
+            Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+    <article class="about-container">
+      <header class="about-header">
+        <img src="img/grant_mueller_400.webp"
+             alt="Headshot of Grant Mueller"
+             width="160"
+             height="160"
+             loading="lazy">
         <h1>Grant Mueller</h1>
-        <p>Data Analyst | Data Scientist</p>
-        <div class"header-right">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="contact.html">Contact</a>
-          <a href="https://github.com/grant-mueller/grant-mueller.github.io/blob/main/GrantMueller_Resume.pdf">Resume</a>
-        </div>
-    </header>
-    <div style="text-align:center;">
-      <h3> Translating data into actionable insights.</h3>
-    </div>
-    <div class="container">
-        <h2>About Me</h2>
-        <div class="portfolio-item">
-          <p> Hi! I'm a data scientist looking for a new position. My approach to data analysis is oriented around data-driven decision making where deliverables are focused on user experience and feedback while aligning with core business needs. I will facilitate the process of structuring datasets to simplify data visualization allowing for insights to be easily drawn from your data. I am a fast learner and able to adapt to any problem facing your organization while expanding my skillset to meet your needs. I have an MS in Biotechnology with a focus in Bioinformatics from Johns Hopkins University. Top skills include data cleaning, exploratory analysis, and visualization. Proficient with Python (pandas, numpy, scipy, seaborn, matplotlib, scikit-learn). In my spare time I listen to music, study Portuguese, and practice Brazilian Jiu-Jitsu. </p>
-        </div>
+        <p class="tagline">Turning data chaos into clarity</p>
+      </header>
 
-    </div>
+      <section class="about-content">
+        <p>I’m Grant Mueller—a data scientist turned data steward with a passion for creating systems that bring order, insight, and integrity to complex scientific data.</p>
 
-    <footer>
-        &copy; 2023 Grant Mueller
-    </footer>
+        <p>With a background in antibody-drug conjugate (ADC) analytics and years of experience across statistical modeling, semantic data integration, and visualization, I specialize in making research and manufacturing data <strong>findable, accessible, interoperable, and reusable</strong>. Whether it’s developing interactive dashboards with Shiny, enriching biologics metadata via SPARQL, or translating stakeholder needs into AI-augmented workflows, I thrive at the intersection of science and strategy.</p>
+
+        <p>My mission is to <strong>turn data chaos into clarity</strong>—not just by crunching numbers, but by designing solutions that scale across teams, projects, and technologies. I believe good data stewardship starts with empathy: understanding how people use data, where bottlenecks live, and how smart tooling can simplify the path from insight to action.</p>
+
+        <p>When I’m not optimizing FAIR workflows or prototyping with Python, I’m probably testing a new AI tool, writing up project notes on GitHub, or sketching ideas for semantic-driven CMC processes.</p>
+      </section>
+
+      <footer class="about-footer">
+        <a href="case-studies.html" role="button">Explore My Case Studies</a>
+      </footer>
+    </article>
+  </main>
+
+  <footer role="contentinfo">
+    &copy; 2025 Grant Mueller
+  </footer>
 </body>
 </html>

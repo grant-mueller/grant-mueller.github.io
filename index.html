@@ -2,154 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grant Mueller | Data Scientist</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Grant Mueller | Data Steward & Scientist</title>
+  <meta name="description" content="Grant Mueller—turning complex life-science data into trustworthy, scalable insights via semantic pipelines, dashboards & FAIR principles.">
 
-    header {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
 
-    nav {
-      width: 100%;
-      background-color: #333;
-      padding-left: 0;
-      padding-right: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      display: inline-block;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-    }
-
-    .nav-item a {
-      display: inline-block;
-      padding: 10px 15px;
-      text-decoration: none;
-      color: white;
-    }
-
-    .header a.logo {
-      font-size: 25px;
-      font-weight: bold;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    .portfolio-item {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .portfolio-item img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .project-feature {
-      background-color: #fff;
-      padding: 2rem;
-      margin: 2rem auto;
-      max-width: 900px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    }
-
-    .project-feature h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-
-    .project-feature p {
-      margin-bottom: 1rem;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    .project-feature a {
-      display: inline-block;
-      margin-right: 1rem;
-      color: #0066cc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-    }
-  </style>
+  <!-- defer JS if you add any -->
+  <!-- <script defer src="script.min.js"></script> -->
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a class="logo"><h2>G. Mueller</h2></a>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo"><h2>G. Mueller</h2></a>
       <ul class="nav-links">
-        <li class="nav-item"><a href="about.html">About</a></li>
-        <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
-        <li class="nav-item"><a href="contact.html">Contact</a></li>
-        <li class="nav-item"><a target="_blank" href="https://github.com/grant-mueller/grant-mueller.github.io/blob/main/GrantMueller_DataSteward_Resume.pdf">Resume</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="https://github.com/grant-mueller/grant-mueller.github.io/blob/main/GrantMueller_DataSteward_Resume.pdf"
+             target="_blank"
+             rel="noopener"
+             aria-label="PDF resume – opens in new tab">
+            Resume
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
 
-  <div class="container">
-    <div class="portfolio-item">
-      <div class="item">
-        <img src="img/grant_mueller_400.png" alt="Grant Mueller">
-        <p>Data Analyst | Data Scientist</p>
+  <main id="main" role="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <h1 id="hero-heading">
+          Enabling trustworthy data ecosystems through science, semantics, and story
+        </h1>
+        <p class="tagline">
+          Bringing order, insight, and integrity to life-science data at scale.
+        </p>
+        <a href="case-studies.html" class="cta" role="button" aria-label="Explore case studies">
+          Explore Case Studies
+        </a>
       </div>
-      <div class="item">
-        <h2>I am</h2>  
-        <h1>Grant Mueller</h1>
-        <h3>Translating data into actionable insights</h3>
-        <a href="portfolio.html">My Projects</a>
-      </div>  
-    </div>
+    </section>
 
-    <!-- ✨ New Project Section -->
-    <div class="project-feature">
-      <h2>🔬 CMC-SPARQL Pipeline</h2>
+    <section class="intro">
       <p>
-        A reusable data pipeline built to enrich CMC data with biomedical knowledge graphs using SPARQL. This project simulates how external ontologies like UniProt can enhance formulation metadata in biologics manufacturing.
+        I'm Grant Mueller—a data scientist turned steward, building smarter,
+        more trustworthy data ecosystems in life sciences.
+        <a href="about.html">Read more about my approach →</a>
       </p>
-      <a href="https://grant-mueller.github.io/uniprot-visualization">📊 View Interactive Chart</a>
-      <a href="https://github.com/grant-mueller/cmc-sparql-template">📁 View Source Code</a>
-    </div>
-  </div>
+    </section>
 
-  <footer>
+    <section class="values" aria-labelledby="values-heading">
+      <h2 id="values-heading" class="visually-hidden">My Core Strengths</h2>
+      <div class="value-item">
+        <h3>🔬 CMC Expertise</h3>
+        <p>Deep experience in ADC analytics and biologics manufacturing workflows.</p>
+      </div>
+      <div class="value-item">
+        <h3>📡 Semantic Data</h3>
+        <p>FAIR pipelines powered by SPARQL, ontologies, and knowledge graphs.</p>
+      </div>
+      <div class="value-item">
+        <h3>📊 Dashboards</h3>
+        <p>Interactive Shiny & web apps that translate complexity into clarity.</p>
+      </div>
+      <div class="value-item">
+        <h3>🤝 Communication</h3>
+        <p>Translating technical results into actionable recommendations.</p>
+      </div>
+    </section>
+
+    <section class="project-feature" aria-labelledby="proj-heading">
+      <h2 id="proj-heading">🔬 CMC-SPARQL Pipeline</h2>
+      <p>
+        A reusable pipeline enriching CMC data with biomedical knowledge graphs via SPARQL—demonstrating how UniProt and external ontologies amplify formulation metadata in biologics manufacturing.
+      </p>
+      <p>
+        <a href="https://grant-mueller.github.io/uniprot-visualization" aria-label="View interactive chart">
+          📊 View Interactive Chart →
+        </a>
+        <a href="https://github.com/grant-mueller/cmc-sparql-template" aria-label="View source code on GitHub">
+          📁 View Source Code →
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
     &copy; 2025 Grant Mueller
   </footer>
 </body>
