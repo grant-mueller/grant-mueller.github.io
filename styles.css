@@ -121,13 +121,17 @@ header { background: var(--color-primary); }
   font-weight: 700;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+  border: 2px solid transparent;
 }
 .hero a.cta:hover,
 .hero a.cta:focus {
-  background: #f8f4ef;
-  color: var(--color-primary);
+  background: var(--color-accent);
+  color: #fff;
   box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  border-color: var(--color-accent);
+  transform: translateY(-2px) scale(1.03);
+  outline: none;
 }
 .hero h1 {
   color: #fff;
