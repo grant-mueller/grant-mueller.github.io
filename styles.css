@@ -119,10 +119,15 @@ header { background: var(--color-primary); }
   padding: .75rem 1.5rem;
   border-radius: 6px;
   font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 .hero a.cta:hover,
 .hero a.cta:focus {
   background: #f8f4ef;
+  color: var(--color-primary);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
 }
 .hero h1 {
   color: #fff;
